@@ -10,7 +10,7 @@
 
 ## Overall architecture
 
-![design architecture](./utils/img/design-architecture.png)
+![design architecture](./resources/img/design-architecture.png)
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest

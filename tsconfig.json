@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"newLine": "LF",
+		"target": "es6",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"sourceMap": true,
+		"outDir": "./dist",
+	},
+    "include": ["src/**/*"],
+  	"exclude": ["node_modules", "**/*.spec.ts"]
+}

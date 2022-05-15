@@ -1,0 +1,24 @@
+{
+	"name": "univie-telegram-chatbot-adapter",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Examples package",
+	"scripts": {
+		"start": "npx ts-node src/botExample.ts",
+		"start:dev": "nodemon src/botExample.ts",
+		"build": "npx tsc"
+	},
+	"author": "Alexander",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^16.0.0",
+		"node-telegram-bot-api": "^0.56.0",
+		"node-telegram-keyboard-wrapper": "^3.1.0"
+	},
+	"devDependencies": {
+		"@types/node-telegram-bot-api": "^0.57.0",
+		"nodemon": "^2.0.16",
+		"ts-node": "^10.7.0",
+		"typescript": "^4.6.3"
+	}
+}

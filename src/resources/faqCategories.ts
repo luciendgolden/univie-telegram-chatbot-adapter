@@ -131,6 +131,59 @@ export const faqCategories: FaqCategories = {
                     ]
                 },
                 {
+                    name: "🏫 Reception centers",
+                    questions: [
+                        {
+                            question: "Vienna",
+                            answer: "Currently, 2 state reception centers for forcedly displaced people from Ukraine have been opened:" +
+                                "\n1. Humanitarian Arrival Center \"Sport & Fun-Halle\"\n" +
+                                "Engerthstraße 267/269, next to the U2 Stadion subway station\n" +
+                                "Works around the clock every day.\n" +
+                                "2. Data collection and consultation center\n" +
+                                "Bruno-Kreisky-Platz 1, Austria Center Vienna, near the U1 Kaisermühlen subway\n" +
+                                "Opening hours: Monday to Friday from 08:00 to 18:00 (Please note that visits are currently only possible by invitation" +
+                                "The latest official information on the work of the centers is published on the website of the City of Vienna:\nhttps://start.wien.gv.at/ukraine/" +
+                                "\n" +
+                                "\n" +
+                                "The following services are available at the Vienna Arrival Humanitarian Center:\n" +
+                                "• First aid\n" +
+                                "• Search for temporary housing\n" +
+                                "• Medical and psychosocial care\n" +
+                                "• Food and drink\n" +
+                                "• Information on orientation in Vienna\n" +
+                                "• Testing for coronavirus\n" +
+                                "• The thorough questions are referred to the data collection and consultation center (Austria Center Vienna).\n" +
+                                "\n" +
+                                "\n" +
+                                "The following services are provided at the data collection and consultation center:\n" +
+                                "• Initial consultation, clarification of further needs and general consultation on social issues\n" +
+                                "• Housing advice / housing assistance\n" +
+                                "• Medical consultations and assistance\n" +
+                                "• Psychological help\n" +
+                                "• Legal advice on legal norms governing the status of foreigners\n" +
+                                "• Possibilities of testing and vaccination\n" +
+                                "\n" +
+                                "\n" +
+                                "How to get to Engerthstrasse from the main train station (Hauptbahnhof)?\n" +
+                                "The Humanitarian Arrival Center can be reached by public transport (subway, bus, tram) or by car. Currently, displaced people from Ukraine can use all public transport in Vienna free of charge and without a ticket, it is enough to show a passport or another document.\n" +
+                                "To get to the Humanitarian Arrival Center of Vienna by public transport from the main train station (Hauptbahnhof), take the U1 subway in the direction of Leopoldau, get to Praterstern station, change to the U2 subway in the direction of Aspernstraße or Seestadt and get to Stadion walk about 5 minutes.\n"
+                        },
+                        {
+                            question: "Graz",
+                            answer: "Humanitarian Arrival Center in Graz, Messehalle D at Messeplatz 1, 8010 Graz (open 24 hours a day)"
+                        },
+                        {
+                            question: "Linz",
+                            answer: "Humanitarian Arrival Center in Linz at Volkshaus Bindermichl Uhlandgasse 5, 4020 Linz"
+                        },
+                        {
+                            question: "Salzburg",
+                            answer: "Arrival center in Salzburg at Messezentrum, Halle 4, 5020 Salzburg\n" +
+                                "https://www.salzburg.gv.at/gesellschaft_/Seiten/ankunftszentrum.aspx\n"
+                        },
+                    ]
+                },
+                {
                     name: "😷 COVID",
                     questions: [
                         {

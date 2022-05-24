@@ -301,6 +301,62 @@ export const faqCategories: FaqCategories = {
                     ]
                 },
                 {
+                    name: "🩺 Health",
+                    questions: [
+                        {
+                            question: "Apply to doctors",
+                            answer: "❗ Austria allows you to apply to all doctors and medical institutions that deal with state insurance (in Vienna - WGKK) with a Ukrainian passport without additional documents.\n" +
+                                "Official confirmation letter to doctors:\n" +
+                                "220308_VPI_Krankenbehandlung_Fluechtlinge_Ukraine.pdf - https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7c7da0cf-8349-4339-9963-23719ec04c32/220308_VPI_Krankenbehandlu"
+                        },
+                        {
+                            question: "Hospitals",
+                            answer: "You can get free medical care at the following facilities:" +
+                                "\n • Lorenz Beler 24-Hour Ambulance:\nDonaueschingenstrasse 13, 1200 Vienna" +
+                                "\n" +
+                                "\n • Brothers of Mercy Hospital. They also accept here without health insurance or documents:\n Johannes-von-Gott-Platz 1, 1020 Vienna" +
+                                "\n" +
+                                "\n • Amber Med Medical Center: \nOberlaaer Straße 300/306, 1230 Vienna" +
+                                "\n" +
+                                "\n • Neunerhaus Hospital provides general medical care, dental and ophthalmic care without insurance: \nMargaretenstraße 166, 1050 Vienna"
+                        },
+                        {
+                            question: "Ukrainian-speaking doctors",
+                            answer: "Therapists" +
+                                "\n • Dr. Sonja Dolezal: \nhttps://www.praxisplan.at/2985529128/1084/Sonja-Dolezal/1" +
+                                "\n" +
+                                "\n • Dr. Taissia Rusnak: \nhttps://www.praxisplan.at/7121852254/1084/Taissia-Rusnak/1" +
+                                "\n" +
+                                "\n • Dr. Oleh Korsh: \nhttps://www.praxisplan.at/2712938380/1084/Oleh-Korsh/1" +
+                                "\n" +
+                                "\n • Dr. Nina Krasser: \nhttps://www.praxisplan.at/1004219464/1084/Nina-Krasser/1" +
+                                "\n" +
+                                "\n • Dr. Nikolai Korpan (General and visceral surgery):\nhttps://www.praxisplan.at/2333236974/1084/Nikolai-Korpan/1" +
+                                "\n" +
+                                "\n • Dr. Alexander Lendel (Dermatologist-venereologist): \nhttps://www.praxisplan.at/7921856494/1084/Alexander-Lendel/1" +
+                                "\n" +
+                                "\n • Dr. Igor Pona (Plastic Surgeon): \nhttps://www.praxisplan.at/8141949586/1084/Igor-Pona/1" +
+                                "\n" +
+                                "\n • Dr. Ioannis Stavrou (Neurosurgeon): \nhttps://www.praxisplan.at/1720943250/1084/Ioannis-Stavrou/1" +
+                                "\n" +
+                                "💡 Please note that some doctors do not have a contract with an insurance company, so their services are paid for by the patient and are not covered by the insurance company.\n"
+                        },
+                        {
+                            question: "Dentists",
+                            answer: "You can get free medical care at the following facilities:" +
+                                "\n • Dr. Florian Rummer: \nhttps://goo.gl/maps/FUye2r6QocCSo85Y7" +
+                                "\n" +
+                                "\n • Dr. Georg Winkler:\n https://goo.gl/maps/6hjYv5niFd9oxmUH8"
+                        },
+                        {
+                            question: "Psychological support ",
+                            answer: "Psychological support for Ukrainians: \nhttps://storinka.at/sos-avstriya/psyhologichna-dopomoga/psyhologichna-pidtrymka-lyudyam-z-ukrayiny/" +
+                                "\n" +
+                                "\nPsychological support project for children and adults \"Poruch\" - regular online meetings \n https://poruch.me/"
+                        },
+                    ]
+                },
+                {
                     name: "😷 COVID",
                     questions: [
                         {

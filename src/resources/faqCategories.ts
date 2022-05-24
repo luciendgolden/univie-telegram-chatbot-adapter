@@ -278,6 +278,29 @@ export const faqCategories: FaqCategories = {
                     ]
                 },
                 {
+                    name: "🚍 Transport",
+                    questions: [
+                        {
+                            question: "Travel for free",
+                            answer: "• Austrian Railways (ÖBB) by 30 June \nSource: https://www.unsereoebb.at/en/artikel/2022/vertriebenen-helfen" +
+                                "\n" +
+                                "\n • Vienna public transport (Wiener Lienien - metro, buses, trams) until May 30 \nSource: https: //www.wienerlinien.at/unterst%C3%BCtzung-f%C3%BCr-menschen-die-aus-der- ukraine-gefl% C3% BCchtet-sind" +
+                                "\n" +
+                                "\n • Buses and trains of the Eastern Transport Association (VOR) \nSource: https://www.vor.at/aktuelles/news/ukraine-fluechtlinge-koennen-alle-verkehrsmittel-im-vor-gratis-nutzen" +
+                                "\n" +
+                                "\n • Cars with Ukrainian license plates are also exempt from tolls \nSource: https: //www.asfinag.at/ueber-uns/presse/pressemeldungen/unburokratische-hilfe-fur-fluchtende-aus-der-ukraine-keine-vignettenpflicht- fur-pkw-mit-ukrainischen-kennzeichen/"
+                        },
+                        {
+                            question: "Trip planning",
+                            answer: "\n • Wienmobil mobile application\nhttps://www.wienerlinien.at/wienmobil-app" +
+                                "\n" +
+                                "\n • Site \"From A to B\nhttps://app.wien.gv.at/covidtestanmeldung/" +
+                                "\n" +
+                                "\n • Scotty Railroad Service\nhttps://fahrplan.oebb.at/webapp/"
+                        },
+                    ]
+                },
+                {
                     name: "😷 COVID",
                     questions: [
                         {

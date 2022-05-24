@@ -1,5 +1,5 @@
-import { CategoryName } from "../interfaces/enums";
-import { FaqCategories } from "../interfaces";
+import {CategoryName} from "../interfaces/enums";
+import {FaqCategories} from "../interfaces";
 
 export const faqCategories: FaqCategories = {
     categories: [
@@ -13,7 +13,7 @@ export const faqCategories: FaqCategories = {
                         {
                             question: "Emergency services",
                             answer: "Emergency services throughout Europe: 112" +
-                            "\nFire service: 122" +
+                                "\nFire service: 122" +
                                 "\nPolice: 133" +
                                 "\nAmbulance: 144" +
                                 "\nRound-the-clock pharmacy: +43 1455"
@@ -43,7 +43,7 @@ export const faqCategories: FaqCategories = {
                             question: "Embassy of Ukraine in Vienna",
                             answer: "Address: Naaffgasse 23, 1180 Vienna" +
                                 "\nPhone: +43 1479 71 72" +
-                            "\nEmergencies: +43 1 479717252" +
+                                "\nEmergencies: +43 1 479717252" +
                                 "\nhttps://austria.mfa.gov.ua/ (official site may not work due to cyber attacks)\n" +
                                 "https://www.facebook.com/ukremb.at/\n"
                         },
@@ -180,6 +180,24 @@ export const faqCategories: FaqCategories = {
                             question: "Salzburg",
                             answer: "Arrival center in Salzburg at Messezentrum, Halle 4, 5020 Salzburg\n" +
                                 "https://www.salzburg.gv.at/gesellschaft_/Seiten/ankunftszentrum.aspx\n"
+                        },
+                    ]
+                },
+                {
+                    name: "🎒 Humanitarian aid",
+                    questions: [
+                        {
+                            question: "Ukrainian warehouse",
+                            answer: "A variety of material assistance can be obtained at the Ukrainian warehouse.\n" +
+                                "Address: Landstraßer Hauptstraße 137, 1030 Wien\n"
+                        },
+                        {
+                            question: "Organizations",
+                            answer: "You can also contact the relevant organizations:" +
+                                "\nhttps://www.adra.at/" +
+                                "\nhttps://nachbarschaftszentren.at/ukraine" +
+                                "\nhttps://www.caritas-leo.at/unsere-hilfe/ausgabestellen" +
+                                "\nhttps://www.thefeelgoodstore.at/"
                         },
                     ]
                 },

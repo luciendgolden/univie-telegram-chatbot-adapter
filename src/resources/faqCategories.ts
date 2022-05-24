@@ -202,6 +202,82 @@ export const faqCategories: FaqCategories = {
                     ]
                 },
                 {
+                    name: "🏠 Housing",
+                    questions: [
+                        {
+                            question: "Volunteer initiatives",
+                            answer: "\n• Homes for Ukraine\nhttps://homesforukraine.eu/uk/home-ukr/" +
+                                "\n" +
+                                "\n • Facebook group \"Housing for refugees from Ukraine\" (in Germany)\n" +
+                                "https://www.facebook.com/groups/288084393475832/?ref=share" +
+                                "\n" +
+                                "\n • CEU4Ukraine Request for accommodation (contact form)\n" +
+                                "https://forms.office.com/pages/responsepage.aspx?id=E1nE2VN24kuSC72wOGOBhF7F8TQ1-HVInQHqbTMuGE9UNjhaVklZMDFCREI5Nk0wMjBUQkdCMzZFVC4u" +
+                                "\n" +
+                                "\n • Request accommodation in Austria - Team Project 316 (form)\n" +
+                                "https://airtable.com/shrKCFXhjS2T4UOPk" +
+                                "\n" +
+                                "\n• A place to stay in Austria - http://warhelp.eu/places/ (form)\n" +
+                                "https://docs.google.com/forms/d/e/1FAIpQLSfyj2-ww7AJkR0PFOym1iRg6lXFqKqTrf435VwLAsR_8RI_wA/viewform" +
+                                "\n" +
+                                "\n • EU4UA\n" +
+                                "https://ua.eu4ua.org/" +
+                                "\n" +
+                                "\n • Telegram group \"Ukrainians in Austria: (info channel) housing for refugees\"\n" +
+                                "https://t.me/Shelter_in_Austria"
+                        },
+                        {
+                            question: "Private offers",
+                            answer: "\n • Website for housing search across Europe\n" +
+                                "https://icanhelp.host/" +
+                                "\n" +
+                                "\n • Host4Ukraine (English)\n" +
+                                "https://www.host4ukraine.com/"
+                        },
+                        {
+                            question: "Hotel initiatives",
+                            answer: "\n • Wombat’s Hostels Refugees from Ukraine: We Have Rooms For You!\n" +
+                                "https://www.wombats-hostels.com/blog/refugees-ukraine-rooms-for-you?fbclid=IwAR2qEWK7_Zlh2hHmfmolyl7D_XA7B11r0MmV7AcOfJu0rIRSePEVhucSphU" +
+                                "\n" +
+                                "\n • ÖHV #HotellerieHilft - Hotel Industry Helps (German)\n" +
+                                "https://www.oehv.at/ueber-uns/mitgliederverzeichnis/hotelleriehilft/\n" +
+                                "https://www.hospitalitysupport.org/apply-now?type=guest"
+                        },
+                        {
+                            question: "Human Rights Initiative CEU",
+                            answer: "Human Rights Initiative CEU (added 05.03.22) \nhttps://www.instagram.com/hrsi.ceu/"
+                        },
+                        {
+                            question: "Housing for refugees (groups/tables)",
+                            answer: "\n • UA / Housing for refugees (WhatsApp group) \nhttps://chat.whatsapp.com/GUQA39fW5Md8InJUqz6IAR" +
+                                "\n" +
+                                "\n • Ukrainian Support - Housing (table) \nhttps://docs.google.com/spreadsheets/d/1M01NqCGkcT3Hw1e-3_H9V50GIuZqV-1dzYu0GQKMJW8/edit#gid=1923745358" +
+                                "\n" +
+                                "\n • Supporting 🇺🇦 friends - Accommodation (table) \nhttps://docs.google.com/spreadsheets/d/1M01NqCGkcT3Hw1e-3_H9V50GIuZqV-1dzYu0GQKMJW8/edit#gid=1923745358" +
+                                "\n" +
+                                "\n • BUDDY group for Ukrainians and fleeing third-country nationals last minute housing requests (Telegram group) \nhttps://docs.google.com/spreadsheets/d/1M01NqCGkcT3Hw1e-3_H9V50GIuZqV-1dzYu0GQKMJW8/edit#gid=1923745358" +
+                                "\n" +
+                                "\n • International Organization for Cultural Diversity (English) \nhttps://www.instagram.com/icdo.at/" +
+                                "\n" +
+                                "\n • Austrian initiative IMMO HILFT for the homeless" +
+                                "\nhttps://immo-hilft.at/" +
+                                "\nhttps://www.instagram.com/immo_hilft/?utm_medium=copy_link"
+                        },
+                        {
+                            question: "Real estate",
+                            answer: "\n • Willhaben Immobilien: https://www.willhaben.at/iad/immobilien" +
+                                "\n" +
+                                "\n • ImmoScout24: https://www.immobilienscout24.at/" +
+                                "\n" +
+                                "\n • Real estate section of the newspaper Der Standard: https://immobilien.derstandard.at/immobiliensuche/" +
+                                "\n" +
+                                "\n • Apartments in Vienna without commission: https://www.facebook.com/groups/2016076738427452" +
+                                "\n" +
+                                "\n • AirBnB: https://www.airbnb.com/"
+                        },
+                    ]
+                },
+                {
                     name: "😷 COVID",
                     questions: [
                         {

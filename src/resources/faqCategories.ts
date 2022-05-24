@@ -8,28 +8,7 @@ export const faqCategories: FaqCategories = {
             description: "Here you can get some useful information about help topics",
             subCategory: [
                 {
-                    name: "COVID",
-                    questions: [
-                        {
-                            question: "What are current COVID regulations?\nWhat’s 2G/2,5G/3G?\nWhat's a green passport?",
-                            answer: "https://www.wien.gv.at/menschen/integration/corona-mehrsprachiger-info-service.html\n\n!!! A green passport for vaccination and a green passport for car insurance are different things"
-                        },
-                        {
-                            question: "Testing for COVID",
-                            answer: "Free tests for coronavirus are conducted at the Vienna Humanitarian Center (Engerthstraße 267-269, 1020 Vienna). You can find other opportunities to test for coronavirus following the link Testangebote: https://coronavirus.wien.gv.at/faq-english/#Testangebote\n" +
-                                "\n" +
-                                "You need to register at the link: https://app.wien.gv.at/covidtestanmeldung/\n" +
-                                "\n" +
-                                "You can be tested without Austrian health insurance.\n"
-                        },
-                        {
-                            question: "Vaccination",
-                            answer: "Detailed information on vaccination, actions in case of suspected coronavirus and current restrictions can be found here - https://www.integrationsfonds.at/coronainfo/ua/"
-                        },
-                    ]
-                },
-                {
-                    name: "Emergency",
+                    name: "🆘 Emergency",
                     questions: [
                         {
                             question: "Emergency services",
@@ -61,6 +40,14 @@ export const faqCategories: FaqCategories = {
                                 "\nWe ask you now to apply to government agencies that provide shelter, medical, legal, psychological support and provide all the necessary things!"
                         },
                         {
+                            question: "Embassy of Ukraine in Vienna",
+                            answer: "Address: Naaffgasse 23, 1180 Vienna" +
+                                "\nPhone: +43 1479 71 72" +
+                            "\nEmergencies: +43 1 479717252" +
+                                "\nhttps://austria.mfa.gov.ua/ (official site may not work due to cyber attacks)\n" +
+                                "https://www.facebook.com/ukremb.at/\n"
+                        },
+                        {
                             question: "SOS\nI need urgent medical help",
                             answer: "Hot lines, contact info:\nhttps://helpforukraine.at/ekstrena-dopomoha"
                         },
@@ -71,6 +58,96 @@ export const faqCategories: FaqCategories = {
                         {
                             question: "I need medical help",
                             answer: "All displaced Ukrainians can get free medical help according to\nhttps://www.gesundheitskasse.at/cdscontent/?contentid=10007.884366&portal=oegkportal\n\nDisplaced persons dont need to get an e-card, only a social security number.\n\nFind doctor: https://www.docfinder.at/ look for Ärzt*innen für Allgemeinmedizin\n\n24/7 pharmacies: https://www.nachtapotheke.wien/\n\nPDF that I sent to Lilia"
+                        },
+                    ]
+                },
+                {
+                    name: "🚄 Get to Austria",
+                    questions: [
+                        {
+                            question: "Telegram groups/wesites for transportation",
+                            answer: "Various groups for transportation:\n" +
+                                "\n • Transport (Telegram group)\nhttps://t.me/+Vd-r0QaoV4c3MTY8\n" +
+                                "\n • Request transport to Austria - Team Project 316 (form)\nhttps://airtable.com/shrDjoqyEP4FqDbMi\n" +
+                                "\n • View transport offers - Team Project 316 (table)\n" +
+                                "https://airtable.com/shrDHDOfIF8GJH6ZU\n" +
+                                "\n • warhelp.eu - We will take you from the border (website)\n" +
+                                "https://warhelp.eu/needs/\n" +
+                                "\n • We help to leave (Telegram group) - The chart to support those who are leaving Ukraine right now and need help \n" +
+                                "https://t.me/huiiivoiiine\n" +
+                                "\n • Borders of Ukraine (Telegram group)\n" +
+                                "https://t.me/+P5Toy99Os203YjVi\n" +
+                                "\n • Monitoring queues at borders (table)\nhttps://docs.google.com/spreadsheets/d/e/2PACX-1vTmKNAxZn2cPpBqPHnRx9Hc_GPzfi7U92h05hkNuES6pA8l7IcbfdRELMkTbWGDF\n" +
+                                "\n • Help on the Ukrainian-Hungarian Border (Telegram group)\n" +
+                                "https://t.me/helpinhungary\n" +
+                                "\n • To Vienna from Poland, Hungary, Slovakia (Telegram group)\n" +
+                                "https://t.me/transferToVienna\n"
+                        },
+                        {
+                            question: "Bus",
+                            answer: "Carrier (transporter):  Flixbus" +
+                                "\n" +
+                                "\n Flixbus transports Ukrainians from the Polish border to Europe for free." +
+                                "Ticket applications are accepted online or by e-mail." +
+                                "\nhttps://www.autocentre.ua/news/flixbus-besplatno-perevozit-ukraintsev-ot-polskoj-granitsy-v-evropu-1390372.html"
+                        },
+                        {
+                            question: "Railway",
+                            answer: "🇦🇹 Austrian Railway - https://www.oebb.at/en/" +
+                                "\nInformation for Ukrainians - https://www.oebb.at/de/neuigkeiten/ukraine-hilfe" +
+                                "\n" +
+                                "\n🇵🇱 Polish Railway - https://rozklad-pkp.pl/" +
+                                "\n • Przemyśl (direct train at 10:40)\n" +
+                                "Przemyśl Główny - Wien Hbf\n" +
+                                "\n • Warsaw (direct train at 06:09, 14:20, 19:49)\n" +
+                                " Warsaw Central - Wien Hbf \n" +
+                                "\n• Katowice (direct train at 00:02, 04:55, 09:04, 14:54, 17:06)\n" +
+                                "Katowice - Wien Hbf\n" +
+                                "\n" +
+                                "\n🇭🇺 Hungarian Railway - https://jegy.mav.hu/" +
+                                "\n • Záhony (direct train at 04:05)" +
+                                "\nZáhony - Wien Hauptbahnhof (Bécs)\n" +
+                                "\n • Budapest (direct trains every hour from 05:40 to 20:40)" +
+                                "\nBudapest-Keleti - Wien Hauptbahnhof (Bécs)\n" +
+                                "\n" +
+                                "\n🇸🇰 Slovak Railway https://www.zssk.sk/en/" +
+                                "\n • Kosice (direct train at 07:11)\n" +
+                                "Kosice - Wien Hbf\n"
+                        },
+                        {
+                            question: "By car",
+                            answer: "From March 18, 2022, cars with Ukrainian license plates are temporarily exempted from paying tolls for travel on Austrian highways and expressways (vignettes)." +
+                                "\nSource:\nhttps://www.asfinag.at/ueber-uns/presse/pressemeldungen/unburokratische-hilfe-fur-fluchtende-aus-der-ukraine-keine-vignettenpflicht-fur-pkw-mit-ukrainischen-kennzeichen/"
+                        },
+                        {
+                            question: "For drivers with a truck",
+                            answer: "📣 To the attention of truck carriers:" +
+                                "\nAustria 🇦🇹 has made it possible to transport humanitarian goods to Ukraine 🇺🇦 both bilaterally and in transit, without the use of permits and tolls on Austrian motorways and expressways." +
+                                "❗️ To perform such transportation, it is necessary to fill in the application form, which can be accessed via the link, and send them to the e-mail address\n👉 ausnahmenahme@asfinag.at" +
+                                "\n" +
+                                "\n☝️ Note that the exemption from tolls for the carriage of humanitarian goods applies to all types of vehicles - from cars to trucks and buses." +
+                                "\nSource:\nhttps://www.asfinag.at/maut-vignette/mautordnung/"
+                        },
+                    ]
+                },
+                {
+                    name: "😷 COVID",
+                    questions: [
+                        {
+                            question: "What are current COVID regulations?\nWhat’s 2G/2,5G/3G?\nWhat's a green passport?",
+                            answer: "https://www.wien.gv.at/menschen/integration/corona-mehrsprachiger-info-service.html\n\n!!! A green passport for vaccination and a green passport for car insurance are different things"
+                        },
+                        {
+                            question: "Testing for COVID",
+                            answer: "Free tests for coronavirus are conducted at the Vienna Humanitarian Center (Engerthstraße 267-269, 1020 Vienna). You can find other opportunities to test for coronavirus following the link Testangebote: https://coronavirus.wien.gv.at/faq-english/#Testangebote\n" +
+                                "\n" +
+                                "You need to register at the link: https://app.wien.gv.at/covidtestanmeldung/\n" +
+                                "\n" +
+                                "You can be tested without Austrian health insurance.\n"
+                        },
+                        {
+                            question: "Vaccination",
+                            answer: "Detailed information on vaccination, actions in case of suspected coronavirus and current restrictions can be found here - https://www.integrationsfonds.at/coronainfo/ua/"
                         },
                     ]
                 },

@@ -15,22 +15,51 @@ export const faqCategories: FaqCategories = {
                             answer: "https://www.wien.gv.at/menschen/integration/corona-mehrsprachiger-info-service.html\n\n!!! A green passport for vaccination and a green passport for car insurance are different things"
                         },
                         {
-                            question: "Can I get COVID-tested?",
-                            answer: "- Generally, each person gets up to 5 free test-kits a month for testing at home\nhttps://cw8.lead-horizon.org/public/welcome (available in Ukrainian). There are categories of people that have to be tested more regularly (Verordnung COVID-19-ScreeningV)\n- Free COVID-tests at Sport&Fun Halle "
+                            question: "Testing for COVID",
+                            answer: "Free tests for coronavirus are conducted at the Vienna Humanitarian Center (Engerthstraße 267-269, 1020 Vienna). You can find other opportunities to test for coronavirus following the link Testangebote: https://coronavirus.wien.gv.at/faq-english/#Testangebote\n" +
+                                "\n" +
+                                "You need to register at the link: https://app.wien.gv.at/covidtestanmeldung/\n" +
+                                "\n" +
+                                "You can be tested without Austrian health insurance.\n"
                         },
                         {
-                            question: "Can I get vaccinated?",
-                            answer: "Free vaccination at Austria Center. Passport/ID is needed"
-                        },
-                        {
-                            question: "Is my vaccine X valid in Austria? ",
-                            answer: "XXX"
+                            question: "Vaccination",
+                            answer: "Detailed information on vaccination, actions in case of suspected coronavirus and current restrictions can be found here - https://www.integrationsfonds.at/coronainfo/ua/"
                         },
                     ]
                 },
                 {
-                    name: "Urgent help",
+                    name: "Emergency",
                     questions: [
+                        {
+                            question: "Emergency services",
+                            answer: "Emergency services throughout Europe: 112" +
+                            "\nFire service: 122" +
+                                "\nPolice: 133" +
+                                "\nAmbulance: 144" +
+                                "\nRound-the-clock pharmacy: +43 1455"
+                        },
+                        {
+                            question: "Location in a shelter",
+                            answer: "Emergency help for location in a shelter\n" +
+                                "Federal Agency for Care and Support\n" +
+                                "+43 1 2676 870 9460 \n" +
+                                "https://www.bbu.gv.at/ukraine\n"
+                        },
+                        {
+                            question: "Volunteer refugees hotline",
+                            answer: "Volunteer hotline on general issues for refugees +43 800 220202"
+                        },
+                        {
+                            question: "“Caritas” charity hotline",
+                            answer: "“Caritas” charity hotline\n" +
+                                "on entry, stay and accommodation questions: +4351776380\n"
+                        },
+                        {
+                            question: "Centers for refugees",
+                            answer: "State reception centers for refugees." +
+                                "\nWe ask you now to apply to government agencies that provide shelter, medical, legal, psychological support and provide all the necessary things!"
+                        },
                         {
                             question: "SOS\nI need urgent medical help",
                             answer: "Hot lines, contact info:\nhttps://helpforukraine.at/ekstrena-dopomoha"

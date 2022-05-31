@@ -357,6 +357,461 @@ export const faqCategories: FaqCategories = {
                     ]
                 },
                 {
+                    name: "🎓 Legal support",
+                    questions: [
+                        {
+                            question: "Free legal advice",
+                            answer: "Free legal advice at Zimmermangasse 8"
+                        },
+                        {
+                            question: "\"Temporary protection\" in Austria",
+                            answer: "An article on \"temporary protection\" in Austria\n" +
+                                "https://storinka.at/korysna-informatsiya/pravovi-pytannya/tymchasovyj-zahyst-v-avstriyi/\n"
+                        },
+                        {
+                            question: "Immigration FAQ",
+                            answer: "Answers to Frequently Asked Questions from the Immigration Office (English and German)\n" +
+                                "https://www.bfa.gv.at/news.aspx?id=7138695A2B6150634156493D\n"
+                        },
+                        {
+                            question: "Telegram group chat",
+                            answer: "A group in the Telegram where you can ask questions\n" +
+                            "https://t.me/+s4iuhlcTYAg3OTBk\n" +
+                                "If you need photos for documents, the Foto Schuster studio offers to take them for free:\n +" +
+                                "https://www.fotoschuster.at/kontakt"
+                        },
+                        {
+                            question: "General info",
+                            answer: "At the level of the European Union and the Austrian Ministry of the Interior, a decision has been" +
+                                "taken to grant a temporary humanitarian right to stay\n" +
+                                "https://ec.europa.eu/commission/presscorner/detail/uk/IP_22_1469" +
+                            "(German vorübergehender Schutz) for all citizens of Ukraine.\n" +
+                                "As of March 4, 2022, according to official information from the Chancellor, the Minister" +
+                                "of the Interior and other officials of Austria, it is known:\n" +
+                                "1. The status of temporary protection, preliminary, will be as follows: The right to stay legally" +
+                                "in Austria for one year with the possibility of extending the permit. Fast procedure of registration of" +
+                                "the document (certificate) in the presence of the document of the citizen of Ukraine (passport)." +
+                                "Accelerated access to the labor market (the right to work legally in Austria). Following this status," +
+                                "Austria intends to provide access to health care, schools and kindergartens. There is no specific information" +
+                                "on financial support at the moment, but humanitarian aid will be provided.\n" +
+                                "\n2. If you have housing and costs for accommodation for the near future, then without an urgent need:\n" +
+                                "a. It is not recommended to apply to the police for refugee status (Asylrecht).\n" +
+                                "b. It is recommended to wait for information on the temporary special status mentioned above." +
+                                "You can stay in Austria on humanitarian grounds, even if your visa-free days are over. Austria and other" +
+                                "EU countries are not currently deporting refugees to Ukraine due to hostilities and threats to the lives of Ukrainians.\n" +
+                                "\n3. In case of urgent need for humanitarian aid (housing, funds, food, medical emergency care)," +
+                                "it is necessary to apply to the state coordination point for humanitarian aid to Ukrainians - Bundesagentur für Betreuungs-" +
+                                "und Unterstützungsleistungen \n+43126768709460\n" +
+                                "(abbreviated - BBU).\n" +
+                                "\n4. Refugee status (Asylrecht) is associated with many negative consequences compared to the new planned temporary protection mechanism." +
+                                "In particular, at the time of the procedure:\n" +
+                                "1. Bureaucratic and long procedure, which can last more than 6 months.\n" +
+                                "2. Delivery of a passport, restrictions on leaving Austria.\n" +
+                                "3. Prohibition of work for the first 3 months. After this period, the maximum salary is limited, a work permit is required.\n" +
+                                "Both statuses include housing, social benefits, social insurance, and access to children's education."
+                        },
+                    ]
+                },
+                {
+                    name: "💬 Groups on social networks",
+                    questions: [
+                        {
+                            question: "Facebook",
+                            answer: "Hilfe für die Ukraine\n" +
+                                "Facebook https://www.facebook.com/hilfefuerdieukraine \n" +
+                                "Instagram https://www.instagram.com/hilfefuerdieukraine/\n " +
+                                "Twitter https://twitter.com/support_ua_22\n" +
+                                "\nUkrainische Jugend in Österreich / Ukrainian Youth Society in Austria\n" +
+                                "https://www.facebook.com/groups/tuma.austria/\n" +
+                                "\nUkrainians in Austria\n" +
+                                "https://www.facebook.com/groups/1601969910048927\n" +
+                                "\nZUM - Salzburg Ukrainian Youth\n" +
+                                "https://www.facebook.com/groups/432176894742646\n" +
+                                "\nUkrainian community Tyrol\n" +
+                                "https://www.facebook.com/groups/1034554430605816\n" +
+                                "\nUkrainians in Vienna - work in Austria, news, advertising\n" +
+                                "https://www.facebook.com/groups/ukrvienna/\n" +
+                                "\nUkrainian mothers in Austria / Ukrainische Mütter in Österreich\n" +
+                                "https://www.facebook.com/groups/2765767900206746\n"
+                        },
+                        {
+                            question: "Telegram",
+                            answer: "Ukraine Austria: Chat for mutual assistance to Ukrainians in Austria" +
+                            "\nhttps://t.me/ukraineat" +
+                                "\nUkrainians in Austria" +
+                                "https://t.me/austriaukr\n" +
+                                "\nAustria helps Ukraine\n" +
+                                "https://t.me/austria_helps_ukraine\n" +
+                                "\nVienna Help for Ukraine" +
+                                "https://t.me/warhelpukraine\n" +
+                                "\nHumanitarian aid for refugees from Ukraine in Vienna! 🇦🇹🇺🇦" +
+                                "https://t.me/+AJ1-1jrgsKZlOWQy\n" +
+                                "\nUkrainian community Tyrol\n" +
+                                "https://t.me/+F1o-kdGLZiAxNTg0\n" +
+                                "\nBUDDY-Gruppe für Ukrainer*innen UND Drittstaatsangehörige auf der Flucht, Last Minute Anfragen für Accommodation & Co\n" +
+                                "https://t.me/+mv2EYRzkvdZlZWNk"
+                        },
+                        {
+                            question: "Vaccination",
+                            answer: "Detailed information on vaccination, actions in case of suspected coronavirus and current restrictions can be found here - https://www.integrationsfonds.at/coronainfo/ua/"
+                        },
+                    ]
+                },
+                {
+                    name: "ℹ️ Information websites",
+                    questions: [
+                        {
+                            question: "Vienna information page",
+                            answer: "Start Wien: Vienna information page\n" +
+                                "https://start.wien.gv.at/ukraine "
+                        },
+                        {
+                            question: "Federal agency for employment and support services",
+                            answer: "Bundesagentur für Betreuungs- und Unterstützungsleistungen\n" +
+                            "Federal agency for employment and support services\n" +
+                            "https://www.bbu.gv.at/"
+                        },
+                        {
+                            question: "Ukrainians in Vienna",
+                            answer: "Ukrainians in Vienna (website) Website with all the necessary information for people who fled to Vienna\n" +
+                                "https://ukrainians-in-vienna.at/ "
+                        },
+                        {
+                            question: "Catalog of information",
+                            answer: "Catalog of information for many EU countries\n" +
+                                "https://allhelpua.info/"
+                        },
+                        {
+                            question: "Information and entertainment website",
+                            answer: "Storinka.at\n" +
+                            "Information and entertainment website for Ukrainians in Austria.\n" +
+                                "https://storinka.at/"
+                        },
+                        {
+                            question: "Behavior in Austria",
+                            answer: "Behavior in Austria:\n" +
+                            "https://storinka.at/sos-avstriya/pam-yatka-pro-povedinku-v-avstrii/"
+                        },
+                        {
+                            question: "Help Ukraine",
+                            answer: "This page provides information on information about Ukraine and all of them.\n" +
+                            "https://www.helpukraine.at/"
+                        },
+                        {
+                            question: "Facebook",
+                            answer: "Austria stands with Ukraine - Austria supports Ukraine\n" +
+                            "https://www.facebook.com/groups/austriahelpsukraine\n" +
+                            "Vienna Front\n" +
+                            "https://www.facebook.com/groups/videnskiyfront"
+                        },
+                    ]
+                },
+                {
+                    name: "💱 Money exchange",
+                    questions: [
+                        {
+                            question: "Erste Bank",
+                            answer: "In Erste Bank branches with cash registers (ie not in any) you can exchange hryvnias" +
+                                "for euros (maximum € 300). There are also free accounts for refugees."
+                        },
+                        {
+                            question: "Reiffeisen Bank",
+                            answer: " There is information that hryvnia is also exchanged at Reiffeisen Bank branches" +
+                                "(in particular at Friedrich-Wilhelm-Raiffeisen-Platz 1, 1020 Wien), and a free refugee account can be opened."
+                        },
+                    ]
+                },
+                {
+                    name: "🏫 Schools and kindergartens",
+                    questions: [
+                        {
+                            question: "Ukrainian Training Center in Vienna",
+                            answer: "The Ukrainian Training Center in Vienna began its work on April 1, 2022. The institution has 120 children." +
+                                "Professional educators help 10th and 11th graders to finish the school year and prepare for university entrance or" +
+                                "decide on a further path. The center will operate until the end of August 2022.\n" +
+                                "For all questions, please contact: eec-vienna@interface-wien.at\n" +
+                                "Address: Tegetthoffstraße 1, 1010 Wien (5th floor)\n" +
+                                "http://interface-wien.at/\n"
+                        },
+                        {
+                            question: "Saturday Ukrainian school",
+                            answer: "https://ukr-schule.at/uk\n" +
+                            "Address: Beethoven Platz 1, 1010 Wien\n" +
+                            "Contact telephones (daily from 09:00 to 20:00): +43 676 674 03 77 and +43 664 354 69 17\n" +
+                                "Director - Anna Krachkovska: direktor@ukr-schule.at"
+                        },
+                        {
+                            question: "Integration School in Vienna",
+                            answer: "The integration school is designed to facilitate the entry of migrants into working life. German language courses will prepare you to study in German. The school has primary, secondary, higher and polytechnic classes. Support is also provided for people who do not have the financial capacity and access to attend cultural and sporting events.\n" +
+                                "To register, send your name and surname, telephone number, residence address in Vienna. Answers to the questions can also be obtained at: ukraine.help.school@gmx.at\n"
+                        },
+                        {
+                            question: "Austrian public schools",
+                            answer: "You can write an email to marina.bernatovic@bildung-wien.gv.at\n" +
+                            "Enter your child's name, date of birth and address in the email.\n" +
+                            "Information for families with school-age children can be found on the website of the" +
+                                "Vienna Department of Education: bildung-wien.gv.at/service/Krieg-in-der-Ukraine\n" +
+                            "Information letter from the Vienna Department of Education for Newly arrived families in Vienna in Ukrainian:\nbildung-wien.gv.at" +
+                                "Look for places in the kindergartens\n" +
+                                "https://start.wien.gv.at/ukraine/ua/kindergartenplatz"
+                        },
+                    ]
+                },
+                {
+                    name: "👧 Children and entertainment",
+                    questions: [
+                        {
+                            question: "Babysitting",
+                            answer: "The Humanitarian Arrival Center in Vienna (Engerthstraße 267-269, 1020 Vienna) offers hourly childcare."
+                        },
+                        {
+                            question: "Tours",
+                            answer: "Free tours of Vienna\n" +
+                            "https://t.me/storiesvienna"
+                        },
+                        {
+                            question: "Panchenko Dance Studio",
+                            answer: "Sports dances in Ukrainian for displaced children,\n" +
+                                "\n" +
+                                "Konstantin Panchenko\n" +
+                                "https://www.facebook.com/groups/2765767900206746/user/100007530610697,\n" +
+                                "Nadiya Panchenko\n" +
+                                "https://www.facebook.com/groups/2765767900206746/user/100001600452334\n" +
+                                "\n" +
+                                "Tuesday 15:45 (5-8 years)\n" +
+                                "Friday 19:15 (9-14 years)\n" +
+                                "All children who want to continue or start doing sports ballroom dancing are invited to our studio. These classes will be free for forcedly displaced children. We conduct training in Ukrainian!\n" +
+                                "To register, send a message with your child's name and year of birth.\n" +
+                                "We hope that we will be able to help children distract themselves from everyday problems.\n" +
+                                "☎️ +4367764013797\n"
+                        },
+                        {
+                            question: "We do good (Telegram)",
+                            answer: "Chat for parents who want to bring their children a little fun and distract from the war. We will draw, play, dance, sculpt from plasticine 3 times a week from 10 to 13 hours.\n" +
+                            "https://t.me/+pRcItmLYfMYyZWIy"
+                        },
+                        {
+                            question: "Children: Together for the kids (Vienna) (Telegram)",
+                            answer: "https://t.me/+TAPj0F7e4xg1ODg0"
+                        },
+                        {
+                            question: "Resources for children",
+                            answer: "We share useful resources to help parents distract children while in shelter ⬇️" +
+                                "\n🔰Ranok Publishing House provides children's books in electronic format for FREE! Just go to BaraBuk's website" +
+                                "(https://bit.ly/35pwNKw) and download to be able to read with children even without internet access!" +
+                                "\n🔰In the Telegram-channel Pavlush and Yalush (https://t.me/pavlushaiyava) you can download" +
+                                "audio tales, which will also be available without the Internet." +
+                                "\n🔰Another Telegram channel with audio Cossacks [[https://t.me/kazky_ukr](https://t.me/kazky_ukr)" +
+                                "Ukrainian. All audio tapes can be downloaded and listened to offline." +
+                                "\n🔰 Yakaboo has opened free access to audio and e-books in the mobile application (https://bit.ly/3CcZG92)." +
+                                "\n🔰 The New Ukrainian School organized a series of informative online meetings with" +
+                                "teachers (https://bit.ly/3sDR87P). The meeting schedule is updated daily." +
+                                "\n🔰 MEGOGO has opened free access to cartoons, movies and audio tales (https://bit.ly/35KLwjg)." +
+                                "\n🔰 Almost three dozen e-books from the Old Lion Publishing House for Children (http://bitly.ws/oQDE)\n" +
+                                "can be downloaded for free.\n" +
+                                "\nSource: Child Psychologist https://www.facebook.com/dytyachyjpsyholog/posts/1946017022261223\n" +
+                                "and the Publishing House Staryi Lev“”\n" +
+                                "https://www.facebook.com/starlev\n" +
+                                "\n" +
+                                "Yoga classes (daily from 11:00 to 12:00):\n" +
+                                "https://instagram.com/dasprema.wien\n"
+                        },
+                    ]
+                },
+                {
+                    name: "🅿️ Parking in Vienna",
+                    questions: [
+                        {
+                            question: "General rules",
+                            answer: "Since March 2022, there have been generalized rules governing paid short-term parking" +
+                                "throughout Vienna. Parking is only possible with a parking ticket (Parkschein) or a \"parking sticker\" for residents (Parkpickerl)."
+                        },
+                        {
+                            question: "Short-term parking areas (Kurzparkzone)",
+                            answer: "Almost the entire territory of Vienna is a short-term parking area, which is subject to the following rules:" +
+                                "\n- Monday to Friday from 9 am to 10 pm (excluding public holidays)\n" +
+                                "- The maximum duration of parking is two hours\n" +
+                                "- On the map of Vienna you can find specially marked parking areas\n" +
+                                "There are various short-term parking rules on the shopping streets of Vienna, which are marked with corresponding signs.\n" +
+                                "The rules governing short-term parking do not apply to single-track vehicles such as mopeds and motorcycles.\m" +
+                                "According to the general rules, you can park for free from 22:00 to 9:00 (at night) on weekdays, and around the" +
+                                "clock on weekends and holidays, unless otherwise specified by the corresponding road sign."
+                        },
+                        {
+                            question: "Parking coupons and payment by mobile phone",
+                            answer: "Parking coupons are issued in paper form and electronically via mobile phone:\nhttps://www.handyparken.at/" +
+                                "Points of sale of parking tickets:\n" +
+                                "- Tobacco kiosks\n" +
+                                "- Cigarette vending machines\n" +
+                                "- Gas stations\n" +
+                                "- Post offices\n" +
+                                "- Pre-sale points of Wiener Linien\n" +
+                                "- Vienna ticket machines (Wiener Linien)\n" +
+                                "- Vienna Tourist Information Center\n" +
+                                "💵 Price for 30 minutes: 1.10 euros\n" +
+                                "In short-term parking areas, you need a parking ticket from the first minute of parking," +
+                                "even for short stops, such as unloading luggage. Free 15-minute parking tickets are available" +
+                                "at the hotel, at the tobacco kiosks, at the tourist information center, and via the mobile phone \nhttps://www.handyparken.at/." +
+                                "Free 15-minute parking tickets cannot be combined with other types of parking tickets.\n" +
+                                "The parking ticket must be completely filled in and placed in a well-accessible place under the windshield." +
+                                "When using several parking tickets at the same time, each ticket must indicate the same time of arrival." +
+                                "Drivers with disabilities must have a parking ticket in accordance with §29B of the 1960 Road Traffic Regulations" +
+                                "(European Parking Ticket) in order to park cars in Vienna's short-term parking areas indefinitely." +
+                                "The coupon should be placed in a well-accessible place under the windshield. This rule also applies to" +
+                                "disabled people who are passengers."
+                        },
+                        {
+                            question: "Parking for residents",
+                            answer: "In all areas of Vienna there are parking spaces designed specifically for residents," +
+                                "which can not be occupied even with a valid parking ticket (violators face a fine!)." +
+                                "These areas are marked with signs prohibiting stopping and parking, with additional plates" +
+                                "except for cars with parking stickers for the X-th district, as well as cars for the disabled (wheelchair symbol)." +
+                                "Attention: the parking ban also applies on weekends and holidays!"
+                        },
+                        {
+                            question: "Park & Ride parking lots and garages",
+                            answer: "To visit the city, we recommend that you change from the car to public transport." +
+                                "On the outskirts of the city you can find the possibility of inexpensive parking in the Viennese" +
+                                "parking lot Park & ​​Ride:\nhttps://www.wien.info/en/travel-info/to-and-around/park-ride-354906\n" +
+                                "at a price of 3.60 euros in day. All Park & ​​Ride parking lots are in the immediate vicinity of" +
+                                "the metro, so you can quickly and easily get to the city center." +
+                                "In the city center or near the center you have a dense network of garages at higher rates." +
+                                "An overview of all parking garages and parking lots in Vienna can be found at:\nwww.parken.at/wien"
+                        },
+                    ]
+                },
+                {
+                    name: "💼 Job search",
+                    questions: [
+                        {
+                            question: "Austrian Employment Service (AMS)",
+                            answer: "Information in Ukrainian from the Austrian Employment Service (AMS):\n" +
+                                "https://www.ams.at/arbeitsuchende/arbeiten-in-oesterreich-und-der-eu/ukraine\n"
+                        },
+                        {
+                            question: "General resources",
+                            answer: "https://www.willhaben.at/jobs/\n" +
+                            "https://www.karriere.at/jobs/platform"
+                        },
+                        {
+                            question: "Resources for Ukrainians",
+                            answer: "https://hireforukraine.org/\n" +
+                                "https://www.jobs-for-ukraine.at\n" +
+                                "https://www.ukrainejobs.at/\n" +
+                                "https://www.uatalents.com/\n" +
+                                "https://happymonday.ua/\n" +
+                                "https://awesomic.crew.work/jobs\n" +
+                                "https://helpukrainians.jooble.org/\n" +
+                                "https://www.hiretohelp.com/\n" +
+                                "https://ua.jooble.org\n" +
+                                "https://www.welcometothejungle.com/en\n" +
+                                "https://indeed.com/\n" +
+                                "https://jobs.dou.ua/vacancies/?remote\n" +
+                                "https://remoteukraine.org/\n" +
+                                "https://hireforukraine.org/\n" +
+                                "https://www.jobs4ukraine.eu/\n" +
+                                "https://imagine-ukraine.org/\n" +
+                                "https://cutt.ly/pA3sAaG\n" +
+                                "https://vpteam.io/candidates/search\n" +
+                                "https://www.helpwithjobfinding.org/"
+                        },
+                        {
+                            question: "English-language work in Austria",
+                            answer: "https://englishjobsearch.at/](https://englishjobsearch.at/\n" +
+                                "https://www.entaincareers.com/jobs/?Keywords=&IndustryID=&VacancyTypeID=&Postcode=&radius=40&LocationID=1980&LocationID=#"
+                        },
+                        {
+                            question: "Facebook/Telegram",
+                            answer: "Work in Austria (Facebook group)\n" +
+                                "https://www.facebook.com/groups/jobinaustria/\n" +
+                                "Work for Ukrainian architects and designers\n" +
+                                "https://forms.office.com/pages/responsepage.aspx?id=JObcZn8a6U6Gh63Q9C8VfnOQvu8EfD5Fn_1J0ofv-gtUNURYVUowUDZFOVE3S1dUTUJIMkRERENSNiQlQCN0PW" +
+                                "Jobs in Austria, vacancies (Facebook group)\n" +
+                                "https://www.facebook.com/groups/dawairabota/\n" +
+                                "Channel in telegram to look for work in Europe\n" +
+                                "https://t.me/outjob\n" +
+                                "You can indicate your nickname in the telegram and the services you can provide:\n" +
+                                "https://t.me/workadojobs/1241" +
+                                "Channel in telegram to look for work in Europe\n" +
+                                "https://t.me/outjob\n" +
+                                "Vacancies in the field of IT and creative industries:\n" +
+                                "https://t.me/casesjobs" +
+                                "Progressive vacancies in Ukraine:\n" +
+                                "https://t.me/lobbyx" +
+                                "Creative vacancies in Ukraine:\n" +
+                                "https://t.me/cresume"
+                        },
+                    ]
+                },
+                {
+                    name: "🐱 Help for animals",
+                    questions: [
+                        {
+                            question: "Emergency",
+                            answer: "Round-the-clock emergency services for animals\n" +
+                                "+43 1 699 24 80\n"
+                        },
+                        {
+                            question: "Protection of Animals of Austria",
+                            answer: "Society for the Protection of Animals of Austria (German)\n" +
+                            "https://www.tierschutz-austria.at"
+                        },
+                        {
+                            question: "Volkshilfe animal care",
+                            answer: "Volkshilfe supports refugees in animal care:\n" +
+                                "\n" +
+                                "• Animal feed and equipment\n" +
+                                "• Veterinary care\n" +
+                                "• Accommodation of animals if they are not allowed in the temporary residence of refugees\n" +
+                                "\n" +
+                                "Phone: +43 676 878 445 14 (Monday to Sunday from 8:00 to 20:00)\n" +
+                                "\n" +
+                                "E-mail: agft@volkshilfe-wien.at\n"
+                        },
+                        {
+                            question: "Free veterinary care/help",
+                            answer: "Neunerhaus offers free veterinary care.\n" +
+                            "https://www.neunerhaus.at/hilfe/tier/" +
+                                "If someone came with animals and need help,  here it is free:\n" +
+                                "It is Tierambulanz am Wasserpark, 1210 Wien.\n" +
+                                "\n" +
+                                "1. http://tierambulanz-am-wasserpark.at/\n" +
+                                "Languages: German, English, Hand & Foot\n" +
+                                "\n" +
+                                "2. https://www.tierquartier.at/ueber-uns/\n" +
+                                "\n" +
+                                "Help specifically with parrots: 0660 5560800 or office@papageienschutz.org\n"
+                        },
+                    ]
+                },
+                {
+                    name: "🇦🇹 German language courses",
+                    questions: [
+                        {
+                            question: "Free German course from a Ukrainian",
+                            answer: "Free German course from Michael Babytsch\n" +
+                                "https://t.me/deutschfueraliens_kurs\n" +
+                                "https://www.instagram.com/deutsch_fuer_aliens_/\n"
+                        },
+                        {
+                            question: "Free German language courses",
+                            answer: "Free German language courses\n" +
+                            "Telegram: +43 664 488 74 86\n" +
+                            "Instagram: @language__guide\n" +
+                            "Registration form:\nhttps://docs.google.com/forms/d/1sW1wgCkOm6DW_SuVpXIdQexaFxDErWT7wcY2B85DI0w/edit?ts=6220c1b7"
+                        },
+                        {
+                            question: "Enrollment to free courses",
+                            answer: "Enrollment in free German language courses for refugees\n" +
+                                "    \n" +
+                                "     Registration form: https://docs.google.com/forms/d/1sW1wgCkOm6DW_SuVpXIdQexaFxDErWT7wcY2B85DI0w/\n" +
+                                "     Telegram: https://t.me/languageguidevienna\n" +
+                                "     German lessons for children in Vienna: https://viagerman.com/student/\n" +
+                                "     Help for beginners with self-study: https://www.kleine-deutsch-hilfe.at/Start-UA.htm"
+                        },
+                    ]
+                },
+                {
                     name: "😷 COVID",
                     questions: [
                         {
@@ -374,6 +829,42 @@ export const faqCategories: FaqCategories = {
                         {
                             question: "Vaccination",
                             answer: "Detailed information on vaccination, actions in case of suspected coronavirus and current restrictions can be found here - https://www.integrationsfonds.at/coronainfo/ua/"
+                        },
+                    ]
+                },
+                {
+                    name: "🎓 Support of scientists",
+                    questions: [
+                        {
+                            question: "Scientific projects for Ukraine",
+                            answer: "Scientific projects for Ukraine.pdf -\n" +
+                                "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bcc15890-3381-4605-8c4f-c217459881a4/Scientific_projects_for_Ukraine.pdf"
+                        },
+                        {
+                            question: "Labs",
+                            answer: "List of labs supporting Ukrainian Scientists\n" +
+                            "https://docs.google.com/spreadsheets/d/1jGFCqP2kj1ZAN6xy6EoRN1bozaggk9VEsbzYaIkkYcQ/htmlview#gid=0"
+                        },
+                        {
+                            question: "Targeted scholarships",
+                            answer: "Humboldt also provides targeted scholarships\n" +
+                                "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/philipp-schwartz-initiative\n"
+                        },
+                        {
+                            question: "Self-employment",
+                            answer: "Self-employment for students and scientists in war\n" +
+                            "https://www.tuwien.at/tu-wien/aktuelles/news/news/hilfsmassnahmen-fuer-studierende-und-wissenschaftler-innen-aus-kriegsgebieten"
+                        },
+                        {
+                            question: "#ScienceForUkraine",
+                            answer: "Our mission is to collect and disseminate information about support opportunities at the university," +
+                                "national, and international level for graduate students and researchers directly affiliated to a ukraine academic institution.\n" +
+                            "https://scienceforukraine.eu/"
+                        },
+                        {
+                            question: "Financial aid from OH students ",
+                            answer: "You can get financial aid from OH students:\n" +
+                                "https://www.oeh.ac.at/soforthilfe?fbclid=IwAR0r7EhgNA5hyosCZbJhdQ-tZI6GbWS9YqPu4sTVoek3MoR8Xx1HrwvBHO8"
                         },
                     ]
                 },

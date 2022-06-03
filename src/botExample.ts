@@ -12,12 +12,14 @@ import { LevelOfTravers } from './interfaces/enums';
 dotenv.config({ path: __dirname+'/../.env' });
 
 const token = process.env.TELEGRAM_ACCESS_TOKEN;
-const bot = TelegramBotInstance.getInstance(token);
+//const bot = TelegramBotInstance.getInstance(token);
+const bot = new TelegramBot(token, { polling: true })
 
 const state: BotState = {
 	isReplyKeyboardOpen: false,
 	category: null,
 	depth: LevelOfTravers.UNDEFINED,
+	prevMsg: null,
 };
 
 function resetState(): void{
@@ -54,27 +56,41 @@ async function closeReplyWithKeyboardOptions(msg: TelegramBot.Message, keyboard:
 	}
 }
 
-bot.onText(/\/start/, (msg) => {
-	const opts: TelegramBot.SendMessageOptions = {
-		reply_markup: replyKeyboard.remove(),
-	};
+bot.onText(/\/start/, async (msg) => {
+	try{
+		const opts: TelegramBot.SendMessageOptions = {
+			reply_markup: replyKeyboard.remove(),
+		};
+		
+		resetState();
+		state.prevMsg = Object.assign(msg);
+		removeAllRows();
+		
+		const botCommands: TelegramBot.BotCommand[] = [
+			{ command: 'hello_c', description: 'Say Hello!' }
+		]
 
-	removeAllRows();
-	resetState();
-	
-	bot.sendMessage(msg.from.id, `Welcome ${msg.from.first_name}`, opts);
-	
-	const commands: {name: string, description: string}[] = qa.faqCategories.categories.map((ctg: Category) => {
-		return { 
-			name: ctg.name, 
-			description: ctg.description
-		}
-	});
+		
+		bot.sendMessage(msg.from.id, `Welcome ${msg.from.first_name}`, opts);
+		
+		const commands: TelegramBot.BotCommand[] = qa.faqCategories.categories.map((ctg: Category) => {
+			return { 
+				command: ctg.name.toLowerCase(), 
+				description: ctg.description
+			}
+		});
 
-	let str = 'Our bot supports the following categories\n'
-	commands.forEach(cmd => str += `\/${cmd.name} - ${cmd.description}\n`)
-	
-	bot.sendMessage(msg.from.id, str);
+		bot.setMyCommands(commands);
+		bot.setChatMenuButton;
+		
+		let str = 'Our bot supports the following categories\n'
+		commands.forEach(cmd => str += `\/${cmd.command} - ${cmd.description}\n`)
+		
+		bot.sendMessage(msg.from.id, str);
+	}catch(e){
+		bot.sendMessage(state.prevMsg.chat.id, `An error occured ${e.message}`);
+		console.log(e);
+	}
 });
 
 bot.on('message', async (msg) => {
@@ -97,7 +113,7 @@ bot.on('message', async (msg) => {
 				console.log(replyKeyboard);
 
 				addNewKeyboardRows(questionNames);
-				addNewKeyboardRow('/restart');
+				addNewKeyboardRow('/start');
 				openReplyWithKeyboardOptions(msg, replyKeyboard);
 
 				state.depth = LevelOfTravers.QUESTION;
@@ -114,9 +130,6 @@ bot.on('message', async (msg) => {
 			closeReplyWithKeyboardOptions(msg, replyKeyboard);
 		}
 
-		if(msg.text === '/restart'){
-			bot.sendMessage(msg.chat.id, 'You can restart the bot with clicking \/start');
-		}
 		/**
 		 * Categories handler from JSON
 		 */
@@ -146,6 +159,7 @@ bot.on('message', async (msg) => {
 });
 
 bot.on('polling_error', (err) => {
-	resetState();
-	console.log(err)
+	console.log(err);
+
+	bot.sendMessage(state.prevMsg.from.id, `An error occured ${err.message}`);
 });

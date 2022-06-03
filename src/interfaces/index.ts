@@ -1,3 +1,4 @@
+import TelegramBot = require("node-telegram-bot-api");
 import { CategoryName, LevelOfTravers } from "./enums";
 
 /**
@@ -32,4 +33,5 @@ export interface BotState {
     isReplyKeyboardOpen: boolean;
 	category: Category | SubCategory | Question;
     depth: LevelOfTravers;
+    prevMsg: TelegramBot.Message;
 }

@@ -96,70 +96,74 @@ bot.onText(/\/start/, async (msg) => {
 bot.on('message', async (msg) => {
 	console.log(msg);
 
-	// Subcategories - ReplyKeyboardMarkup
-	if (!hasBotCommands(msg.entities)) {
-		// distinguish state of either subcategory or question replyKeyboard
-		switch(+state.depth){
-			case LevelOfTravers.SUBCATEGORY:
-				const currentCategory: Category = Object.assign(state.category);
+	try{
+		// Subcategories - ReplyKeyboardMarkup
+		if (!hasBotCommands(msg.entities)) {
+			// distinguish state of either subcategory or question replyKeyboard
+			switch(+state.depth){
+				case LevelOfTravers.SUBCATEGORY:
+					const currentCategory: Category = Object.assign(state.category);
 
-				state.category = mapFromCategoryToSubCategory(currentCategory, msg.text);
-				bot.sendMessage(msg.chat.id, `You clicked the subcategory ${msg.text}`);
+					state.category = mapFromCategoryToSubCategory(currentCategory, msg.text);
+					bot.sendMessage(msg.chat.id, `You clicked the subcategory ${msg.text}`);
 
-				// create respective subcategory questions[] -> add all questions to replyKeyboard -> openReplyWithKeyboardOptions
-				const questionNames: string[] = state.category.questions.map((e: Question) => e.question);
+					// create respective subcategory questions[] -> add all questions to replyKeyboard -> openReplyWithKeyboardOptions
+					const questionNames: string[] = state.category.questions.map((e: Question) => e.question);
 
-				removeAllRows();
-				console.log(replyKeyboard);
+					removeAllRows();
+					console.log(replyKeyboard);
 
-				addNewKeyboardRows(questionNames);
-				addNewKeyboardRow('/start');
-				openReplyWithKeyboardOptions(msg, replyKeyboard);
+					addNewKeyboardRows(questionNames);
+					addNewKeyboardRow('/start');
+					openReplyWithKeyboardOptions(msg, replyKeyboard);
 
-				state.depth = LevelOfTravers.QUESTION;
-				break;
-			case LevelOfTravers.QUESTION:
-				const currentQuestions: SubCategory = Object.assign(state.category);
-				const question: Question = mapFromSubCategoryToQuestion(currentQuestions, msg.text);
-				bot.sendMessage(msg.chat.id, question.answer);
-				break;
-		}
+					state.depth = LevelOfTravers.QUESTION;
+					break;
+				case LevelOfTravers.QUESTION:
+					const currentQuestions: SubCategory = Object.assign(state.category);
+					const question: Question = mapFromSubCategoryToQuestion(currentQuestions, msg.text);
+					bot.sendMessage(msg.chat.id, question.answer);
+					break;
+			}
 
-	} else if(hasBotCommands(msg.entities)){
-		if (state.isReplyKeyboardOpen) {
-			closeReplyWithKeyboardOptions(msg, replyKeyboard);
-		}
+		} else if(hasBotCommands(msg.entities)){
+			if (state.isReplyKeyboardOpen) {
+				closeReplyWithKeyboardOptions(msg, replyKeyboard);
+			}
 
-		/**
-		 * Categories handler from JSON
-		 */
-		 const faqCategories: string[] = qa.faqCategories.categories.map((ctg: Category) => ctg.name.toLowerCase());
+			/**
+			 * Categories handler from JSON
+			 */
+			const faqCategories: string[] = qa.faqCategories.categories.map((ctg: Category) => ctg.name.toLowerCase());
 
-		 for(const ctg of faqCategories) {
-			 if(msg.text.substring(1).trim() === ctg) {
-				removeAllRows();
-				bot.sendMessage(msg.chat.id, `You clicked the category ${ctg}`);
+			for(const ctg of faqCategories) {
+				if(msg.text.substring(1).trim() === ctg) {
+					removeAllRows();
+					bot.sendMessage(msg.chat.id, `You clicked the category ${ctg}`);
 
-				state.category = mapFromFaqCategoryToCategory(qa.faqCategories, ctg);
+					state.category = mapFromFaqCategoryToCategory(qa.faqCategories, ctg);
 
-				if(state.category.subCategory.length <= 0) {
-					bot.sendMessage(msg.chat.id, `Seems like this category „${ctg}“ does not have any subcategories`);
-					return;
+					if(state.category.subCategory.length <= 0) {
+						bot.sendMessage(msg.chat.id, `Seems like this category „${ctg}“ does not have any subcategories`);
+						return;
+					}
+
+					// Add subcategories to replyKeyboard
+					const subCategoryNames: string[] = state.category.subCategory.map((subCtg: SubCategory) => subCtg.name);
+					addNewKeyboardRows(subCategoryNames);
+					openReplyWithKeyboardOptions(msg, replyKeyboard);
+
+					state.depth = LevelOfTravers.SUBCATEGORY;
 				}
-
-				// Add subcategories to replyKeyboard
-				const subCategoryNames: string[] = state.category.subCategory.map((subCtg: SubCategory) => subCtg.name);
-				addNewKeyboardRows(subCategoryNames);
-				openReplyWithKeyboardOptions(msg, replyKeyboard);
-
-				state.depth = LevelOfTravers.SUBCATEGORY;
-			 }
-		 }
+			}
+		}
+	}catch(e){
+		bot.sendMessage(state.prevMsg.chat.id, `An error occured ${e.message}`);
+		console.log(e);
 	}
 });
 
 bot.on('polling_error', (err) => {
 	console.log(err);
-
 	bot.sendMessage(state.prevMsg.from.id, `An error occured ${err.message}`);
 });

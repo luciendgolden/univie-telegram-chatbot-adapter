@@ -1,9 +1,10 @@
 export enum CategoryName {
     HELP = "help",
-    REGISTRATION = "registration",
+    MEDICINE = "medicine",
     STUDYING = "studying",
-    DAILY_NEEDS = "dailyNeeds",
-    OFFERS_FOR_REFUGEES = "offersForRefugees",
+    TRANSPORTATION = "transportation",
+    HOUSING = "housing",
+    PETS = "pets",
   }
 
   export enum LevelOfTravers {

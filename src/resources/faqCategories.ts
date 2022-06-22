@@ -871,23 +871,28 @@ export const faqCategories: FaqCategories = {
             ]
         },
         {
-            name: CategoryName.REGISTRATION,
-            description: "Тут ви можете отримати корисну інформацію про реєстраційні теми 👨‍👩‍👦",
+            name: CategoryName.HOUSING,
+            description: "XXX",
+            subCategory: []
+        },
+        {
+            name: CategoryName.MEDICINE,
+            description: "XXX",
+            subCategory: []
+        },
+        {
+            name: CategoryName.PETS,
+            description: "XXX",
             subCategory: []
         },
         {
             name: CategoryName.STUDYING,
-            description: "Тут ви можете отримати корисну інформацію про вивчення тем 📚 📖",
+            description: "XXX",
             subCategory: []
         },
         {
-            name: CategoryName.DAILY_NEEDS,
-            description: "Тут ви можете отримати корисну інформацію про щоденні потреби 🛒",
-            subCategory: []
-        },
-        {
-            name: CategoryName.OFFERS_FOR_REFUGEES,
-            description: "Тут ви можете отримати корисну інформацію про пропозиції для біженців 🕊",
+            name: CategoryName.TRANSPORTATION,
+            description: "XXX",
             subCategory: []
         },
     ]

@@ -22,38 +22,22 @@ const state: BotState = {
 	prevMsg: null,
 };
 
+const faqCmds: {command: string; description: string;}[] = qa.faqCategories.categories.map((ctg: Category) => {
+	return { 
+		command: ctg.name.toLowerCase().replace(/\s/g, ""), 
+		description: ctg.description
+	}
+});
+
+const commands: TelegramBot.BotCommand[] = [{
+	command: 'start',
+	description: 'Почніть знову і покажіть мені, що ви можете відповісти',
+}, ...faqCmds]
+
 function resetState(): void{
 	state.isReplyKeyboardOpen = false;
 	state.category = null;
 	state.depth = LevelOfTravers.UNDEFINED;
-}
-
-async function openReplyWithKeyboardOptions(msg: TelegramBot.Message, keyboard: ReplyKeyboard){
-	const messageOptions: TelegramBot.SendMessageOptions = {
-		reply_markup: keyboard.getMarkup(),
-	};
-
-	await bot.sendMessage(
-		msg.from.id,
-		'This is a message with a reply keyboard. Click on one of the buttons to close it.',
-		messageOptions,
-	);
-	state.isReplyKeyboardOpen = true;
-}
-
-async function closeReplyWithKeyboardOptions(msg: TelegramBot.Message, keyboard: ReplyKeyboard){
-	if (state.isReplyKeyboardOpen) {
-		const options: TelegramBot.SendMessageOptions = {
-			reply_markup: keyboard.remove(),
-		};
-
-		await bot.sendMessage(
-			msg.from.id,
-			'Message Received. Im closing the replyKeyboard.',
-			options,
-		);
-		state.isReplyKeyboardOpen = false;
-	}
 }
 
 bot.onText(/\/start/, async (msg) => {
@@ -62,35 +46,29 @@ bot.onText(/\/start/, async (msg) => {
 			reply_markup: replyKeyboard.remove(),
 		};
 		
+		// reset state, remove all replykeyboard rows and save message item as state
 		resetState();
 		removeAllRows();
 		state.prevMsg = Object.assign(msg);
 		
-		bot.sendMessage(msg.from.id, `Welcome ${msg.from.first_name}`, opts);
-		
-		const commands: TelegramBot.BotCommand[] = qa.faqCategories.categories.map((ctg: Category) => {
-			return { 
-				command: ctg.name.toLowerCase(), 
-				description: ctg.description
-			}
-		});
+		// send welcome message and remove open keyboard
+		await bot.sendMessage(msg.from.id, `Ласкаво просимо ${msg.from.first_name}`, opts);
 
+		// set persistent menue
 		bot.setMyCommands(commands);
 		bot.setChatMenuButton;
-		
-		let str = 'Our bot supports the following categories\n'
+
+		let str = 'Наш бот підтримує наступні категорії\n'
 		commands.forEach(cmd => str += `\/${cmd.command} - ${cmd.description}\n`)
 		
 		bot.sendMessage(msg.from.id, str);
 	}catch(e){
-		bot.sendMessage(state.prevMsg.chat.id, `An error occured ${e.message}`);
 		console.log(e);
+		bot.sendMessage(state.prevMsg.from.id, `Start command error occured ${e.message}`);
 	}
 });
 
 bot.on('message', async (msg) => {
-	console.log(msg);
-
 	try{
 		// Subcategories - ReplyKeyboardMarkup
 		if (!hasBotCommands(msg.entities)) {
@@ -100,18 +78,19 @@ bot.on('message', async (msg) => {
 					const currentCategory: Category = Object.assign(state.category);
 
 					state.category = mapFromCategoryToSubCategory(currentCategory, msg.text);
-					bot.sendMessage(msg.chat.id, `You clicked the subcategory ${msg.text}`);
+					
 
 					// create respective subcategory questions[] -> add all questions to replyKeyboard -> openReplyWithKeyboardOptions
 					const questionNames: string[] = state.category.questions.map((e: Question) => e.question);
 
 					removeAllRows();
-					console.log(replyKeyboard);
-
 					addNewKeyboardRows(questionNames);
-					addNewKeyboardRow('/start');
-					openReplyWithKeyboardOptions(msg, replyKeyboard);
 
+					bot.sendMessage(msg.chat.id, `Виберіть тему з ${msg.text}, про яку б хотіли дізнатися більше!`, {
+						reply_markup: replyKeyboard.getMarkup(),
+					});
+
+					state.isReplyKeyboardOpen = true;
 					state.depth = LevelOfTravers.QUESTION;
 					break;
 				case LevelOfTravers.QUESTION:
@@ -122,43 +101,57 @@ bot.on('message', async (msg) => {
 			}
 
 		} else if(hasBotCommands(msg.entities)){
-			if (state.isReplyKeyboardOpen) {
-				closeReplyWithKeyboardOptions(msg, replyKeyboard);
-			}
-
 			/**
-			 * Categories handler from JSON
+			 * Categories handler from static FAQ JSON file
 			 */
-			const faqCategories: string[] = qa.faqCategories.categories.map((ctg: Category) => ctg.name.toLowerCase());
+			const faqCategories: string[] = qa.faqCategories.categories.map((ctg: Category) => ctg.name.toLowerCase().replace(/\s/g, ""));
 
 			for(const ctg of faqCategories) {
 				if(msg.text.substring(1).trim() === ctg) {
 					removeAllRows();
-					bot.sendMessage(msg.chat.id, `You clicked the category ${ctg}`);
 
+					const cmd: TelegramBot.BotCommand = commands.find(cmd => cmd.command === ctg);
 					state.category = mapFromFaqCategoryToCategory(qa.faqCategories, ctg);
 
 					if(state.category.subCategory.length <= 0) {
-						bot.sendMessage(msg.chat.id, `Seems like this category „${ctg}“ does not have any subcategories`);
+						let opts: TelegramBot.SendMessageOptions = {};
+
+						if(state.isReplyKeyboardOpen){
+							opts = {
+								reply_markup: replyKeyboard.remove(),
+							};
+						}
+
+						bot.sendMessage(msg.chat.id, `Вибачте, але наразі ми не можемо надати вам конкретну інформацію для категорії „${ctg}“`, opts);
+						state.isReplyKeyboardOpen = false;
+
 						return;
 					}
 
 					// Add subcategories to replyKeyboard
 					const subCategoryNames: string[] = state.category.subCategory.map((subCtg: SubCategory) => subCtg.name);
 					addNewKeyboardRows(subCategoryNames);
-					openReplyWithKeyboardOptions(msg, replyKeyboard);
 
+					bot.sendMessage(msg.chat.id, `Категорія ${ctg} підтримує вас із такими темами - ${cmd.description}`, {
+						reply_markup: replyKeyboard.getMarkup(),
+					});
+
+					state.isReplyKeyboardOpen = true;
 					state.depth = LevelOfTravers.SUBCATEGORY;
 				}
 			}
 		}
 	}catch(e){
-		bot.sendMessage(state.prevMsg.chat.id, `An error occured ${e.message}`);
+		console.log(state.prevMsg);
 		console.log(e);
+
+		bot.sendMessage(state.prevMsg.chat.id, `Message error occured ${e.message}`);
 	}
 });
 
 bot.on('polling_error', (err) => {
+	console.log(state.prevMsg);
 	console.log(err);
-	bot.sendMessage(state.prevMsg.from.id, `An error occured ${err.message}`);
+
+	bot.sendMessage(state.prevMsg.chat.id, `Polling error occured ${err.message}`);
 });

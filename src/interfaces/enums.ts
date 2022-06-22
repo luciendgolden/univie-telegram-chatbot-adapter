@@ -3,7 +3,7 @@ export enum CategoryName {
     REGISTRATION = "registration",
     STUDYING = "studying",
     DAILY_NEEDS = "dailyNeeds",
-    OFFERS_FOR_REFUGEES = "OffersForRefugees",
+    OFFERS_FOR_REFUGEES = "offersForRefugees",
   }
 
   export enum LevelOfTravers {

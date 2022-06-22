@@ -5,7 +5,7 @@ export const faqCategories: FaqCategories = {
     categories: [
         {
             name: CategoryName.HELP,
-            description: "Here you can get some useful information about help topics",
+            description: "Тут ви можете отримати корисну інформацію про теми довідки 🎯",
             subCategory: [
                 {
                     name: "🆘 Emergency",
@@ -872,22 +872,22 @@ export const faqCategories: FaqCategories = {
         },
         {
             name: CategoryName.REGISTRATION,
-            description: "Here you can get some useful information about registration topics",
+            description: "Тут ви можете отримати корисну інформацію про реєстраційні теми 👨‍👩‍👦",
             subCategory: []
         },
         {
             name: CategoryName.STUDYING,
-            description: "Here you can get some useful information about studying topics",
+            description: "Тут ви можете отримати корисну інформацію про вивчення тем 📚 📖",
             subCategory: []
         },
         {
             name: CategoryName.DAILY_NEEDS,
-            description: "Here you can get some useful information about daily needs topics",
+            description: "Тут ви можете отримати корисну інформацію про щоденні потреби 🛒",
             subCategory: []
         },
         {
             name: CategoryName.OFFERS_FOR_REFUGEES,
-            description: "Here you can get some useful information about offers for refugees topics",
+            description: "Тут ви можете отримати корисну інформацію про пропозиції для біженців 🕊",
             subCategory: []
         },
     ]

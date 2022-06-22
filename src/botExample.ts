@@ -63,13 +63,8 @@ bot.onText(/\/start/, async (msg) => {
 		};
 		
 		resetState();
-		state.prevMsg = Object.assign(msg);
 		removeAllRows();
-		
-		const botCommands: TelegramBot.BotCommand[] = [
-			{ command: 'hello_c', description: 'Say Hello!' }
-		]
-
+		state.prevMsg = Object.assign(msg);
 		
 		bot.sendMessage(msg.from.id, `Welcome ${msg.from.first_name}`, opts);
 		

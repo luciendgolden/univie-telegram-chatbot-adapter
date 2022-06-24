@@ -8,7 +8,11 @@
 - Task: Implement a chatbot for a first orientation, answering FAQs and advising the students on support offers.
 
 
-## Overall architecture
+## architecture
+
+![design actual architecture](./resources/img/Architecture.png)
+
+## Upcoming challenges
 
 ![design architecture](./resources/img/design-architecture.png)
 
